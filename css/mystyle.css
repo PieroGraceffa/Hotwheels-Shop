@@ -1,0 +1,488 @@
+/* Body styling */
+body {
+  /* Italian flag background */
+/* Sets a linear gradient background from green to white to red */
+  background-image: linear-gradient(to right, green 0%, white 50%, red 80%); 
+  /* Prevents the background from repeating */
+  background-repeat: no-repeat; 
+  /* Ensures the background covers the entire element */
+  background-size: cover; 
+}
+
+/* Center the text within <h1> element */
+h1 {
+  text-align: center; 
+}
+
+
+h2 {  
+  text-align: center; 
+}
+/* Center the text within <h3> element */
+h3 {  
+  text-align: center; 
+}
+/* Center the text within <h6> element */
+h6 {  
+  text-align: center; 
+}
+
+
+/* ContactMe section styling */
+.ContactMe {
+  /* Displays the element as a flex container */
+  display: flex; 
+  /* Sets the flex container to have a vertical layout */
+  flex-direction: column;   
+  /* Centers the flex items vertically within the container */
+  justify-content: center; 
+  /* Sets the minimum height of the element to 100% of the viewport height */
+  min-height: 100vh; 
+  /* Centers the text horizontally within the element */
+  text-align: center; 
+}
+
+.ContactMe img {
+  /* Displays the images as inline-block elements */
+  display: inline-block; 
+  /* Adds a margin around the images */
+  margin: 10px; 
+}
+
+/* Style the navigation bar */
+.navbar {
+  /* Displays the element as a flex container */
+  display: flex; 
+  /* Centers the flex items horizontally within the container */
+  justify-content: center; 
+  /* Centers the flex items vertically within the container */
+  align-items: center; 
+  /* Sets the background color of the navigation bar to black */
+  background-color: black; 
+  /* Sets the height of the navigation bar */
+  height: 50px; 
+}
+
+.navbar a {
+  /* Displays the element as a flex container */
+  display: flex; 
+  /* Centers the flex items vertically within the container */
+  align-items: center; 
+  /* Sets the text color to white */
+  color: white; 
+  /* Removes the underline decoration from the links */
+  text-decoration: none; 
+  /* Adds padding to the links */
+  padding: 0 15px; 
+}
+
+.navbar a img {
+  /* Sets the height of the images within the navigation links */
+  height: 20px; 
+  /* Adds a margin to the right of the images within the navigation links */
+  margin-right: 5px; 
+}
+
+/* Testimonial section styling */
+.testimonial-container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  max-width: 1000px;
+  margin: auto;
+  }
+
+.testimonial {
+  /* Sets the width of the testimonial elements */
+  width: 30%; 
+  /* Adds margin at the bottom of the testimonial elements */
+  margin-bottom: 20px; 
+  /* Adds padding to the testimonial elements */
+  padding: 15px; 
+  /* Adds a border to the testimonial elements */
+  border: 1px solid black; 
+  /* Adds border radius to the testimonial elements */
+  border-radius: 5px; 
+  /* Adds a box shadow to the testimonial elements */
+  box-shadow: 0 2px 4px black; 
+  /* Sets the background color of the testimonial elements to white */
+  background-color: white; 
+}
+
+.testimonial img {
+  /* Sets the width of the images within the testimonial elements */
+  width: 80px; 
+  /* Sets the height of the images within the testimonial elements */
+  height: 80px; 
+  /* Adds border radius to the images within the testimonial elements */
+  border-radius: 50%; 
+  /* Adds margin at the bottom of the images within the testimonial elements */
+  margin-bottom: 10px; 
+}
+
+.testimonial h3 {
+  /* Sets the font size of the <h3> elements within the testimonial elements */
+  font-size: 16px; 
+  /* Adds margin at the bottom of the <h3> elements within the testimonial elements */
+  margin-bottom: 10px; 
+}
+
+.testimonial p {
+  /* Sets the font size of the <p> elements within the testimonial elements */
+  font-size: 14px; 
+  /* Sets the line height of the <p> elements within the testimonial elements */
+  line-height: 1.5; 
+}
+
+/* Button styling */
+.btn-primary {
+  /* Sets the background color of the primary button to red */
+  background-color: red; 
+  /* Sets the text color of the primary button to black */
+  color: black; 
+  /* Displays the element as a flex container */
+  display: flex; 
+  /* Centers the content horizontally within the button */
+  justify-content: center; 
+  /* Centers the content vertically within the button */
+  align-items: center; 
+  /* Sets the width of the primary button */
+  width: 180px; 
+  /* Adjusts the height of the primary button automatically */
+  height: auto; 
+  /* Adds border radius to the primary button */
+  border-radius: 5px; 
+  /* Centers the button horizontally within its container */
+  margin: 0 auto; 
+}
+
+/* Table styling */
+table {
+  /* Centers the table horizontally within its container */
+  margin: 0 auto; 
+  /* Collapses the border spacing between table cells */
+  border-collapse: collapse; 
+}
+
+/* Style the table for the poll */
+th, td {
+  /* Adds padding to the table cells */
+  padding: 10px; 
+  /* Aligns the content of the table cells to the left */
+  text-align: left; 
+  /* Adds a bottom border to the table cells */
+  border-bottom: 1px solid #ddd; 
+}
+
+
+label {
+/* Displays the element as a block element */
+  display: block; 
+/* Adds margin at the bottom of the labels */
+  margin-bottom: 5px; 
+}
+
+button {
+/* Displays the element as a block element */
+  display: block; 
+/* Centers the button horizontally within its container */
+  margin: 20px auto; 
+/* Adds padding to the button */
+  padding: 10px 20px; 
+/* Sets the font size of the button */
+  font-size: 16px; 
+}
+
+table img {
+/* Sets the width of the images within the table */
+  width: 100px; 
+/* Adjusts the height of the images within the table automatically */
+  height: auto; 
+}
+
+/* Footer styling */
+footer {
+  /* Displays the element as a flex container */
+  display: flex; 
+  /* Centers the flex items horizontally within the container */
+  justify-content: center; 
+  /* Centers the flex items vertically within the container */
+  align-items: center; 
+  /* Sets the height of the footer */
+  height: 100px; 
+}
+
+footer .col-md-6 {
+  /* Displays the element as a flex container */
+  display: flex; 
+  /* Centers the flex items horizontally within the container */
+  justify-content: center; 
+  /* Centers the flex items vertically within the container */
+  align-items: center; 
+}
+
+footer img {
+  /* Adds margin to the right of the images within the footer */
+  margin-right: 10px; 
+}
+
+/* Styling for the carousel container */
+.carousel {
+  /* Set the width to 100% of its parent container */
+  width: 100%; 
+  /* Set a fixed height of 400 pixels */
+  height: 400px; 
+  /* Hide any content that exceeds the container's dimensions */
+  overflow: hidden; 
+  /* Position the container relative to its normal position on the page */
+  position: relative; 
+}
+
+/* Styling for the slide container */
+.slide-container {
+ /* Use flex display to arrange the slides horizontally */
+  display: flex; 
+ /* Set the width to accommodate multiple slides within the container */
+  width: 900%; 
+ /* Match the height of the carousel container */
+  height: 100%; 
+ /* Apply the "slide" animation to the container, with a duration of 30 seconds and set to repeat infinitely */
+  animation: slide 30s infinite; 
+}
+
+/* Styling for individual slides */
+.slide {
+ /* Set the width to evenly distribute the slides within the container */
+  width: 11.11%; 
+ /* Match the height of the carousel container */
+  height: 100%; 
+}
+
+/* Styling for images within slides */
+.slide img {
+ /* Set the width of the image to occupy the entire width of its parent slide */
+  width: 100%; 
+ /* Set the height of the image to occupy the entire height of its parent slide */
+  height: 100%; 
+ /* Resize the image while maintaining its aspect ratio to fit within the slide without distortion */
+  object-fit: contain; 
+}
+
+/* Keyframes for the slide animation, thank you google */
+@keyframes slide {
+  /* Start the animation with the container at its original position */
+  0% { transform: translateX(0%); } 
+  11.11% { transform: translateX(-11.11%); } 
+  22.22% { transform: translateX(-22.22%); } 
+  44.44% { transform: translateX(-44.44%); } 
+  55.55% { transform: translateX(-55.55%); } 
+  66.66% { transform: translateX(-66.66%); } 
+  77.77% { transform: translateX(-77.77%); } 
+  88.88% { transform: translateX(-88.88%); } 
+  /* Move the container to the left by -100%, reaching its final position */
+  100% { transform: translateX(-100%); } 
+}
+
+/* Garage styling */
+#gallery-container {
+  /* Adds margin space at the top of the gallery container */
+  margin-top: 20px; 
+  /* Displays the gallery items in a flex container */
+  display: flex; 
+  /* Allows the gallery items to wrap to the next row */
+  flex-wrap: wrap; 
+  /* Centers the gallery items horizontally within the container */
+  justify-content: center; 
+  /* Sets the gap between gallery items */
+  gap: 20px; 
+}
+
+.gallery-item {
+  /* Sets the width of each gallery item */
+  width: 290px; 
+}
+
+.gallery-item img {
+  /* Makes the gallery item images fill the entire width of their container */
+  width: 100%; 
+  /* Automatically adjusts the height of the images while maintaining their aspect ratio */
+  height: auto; 
+  /* Adds a black border around the gallery item images */
+  border: 2px solid black; 
+}
+
+/* Garage */
+#favorites-container {
+  /* Use flexbox to create a flexible container */
+  display: flex; 
+  /* Allow the items to wrap to the next line if needed */
+  flex-wrap: wrap; 
+  /* Center the items horizontally within the container */
+  justify-content: center; 
+  /* Add a top margin of 20 pixels */
+  margin-top: 20px; 
+}
+
+#favorites-container img {
+  /* Set the width of the images to 300 pixels */
+  width: 400px; 
+  /* Set the height of the images to 250 pixels */
+  height: 350px; 
+  /* Add a margin of 10 pixels around each image */
+  margin: 10px; 
+  /* Add a black border with a thickness of 2 pixels */
+  border: 2px solid black; 
+}
+
+
+
+.item-info {
+  /* Adds a black border around the item information */
+  border: 2px solid black; 
+  /* Centers the text within the item information */
+  text-align: center; 
+  /* Displays the item information as a flex container */
+  display: flex; 
+  /* Sets the direction of the flex container to column */
+  flex-direction: column; 
+  /* Centers the items vertically within the container */
+  align-items: center; 
+  /* Centers the items horizontally within the container */
+  justify-content: center; 
+}
+
+
+.likes {
+   /* Adds margin space at the bottom of the likes section */
+  margin-bottom: 10px;
+}
+
+.comments h3 {
+  /* Removes the top margin of the comments section heading */
+  margin-top: 0; 
+}
+
+.comments ol {
+  /* Removes the bullet points from the comments list */
+  list-style: none; 
+  /* Removes padding from the comments list */
+  padding: 5; 
+  /* Adds margin space around the comments list */
+  margin: 10; 
+}
+
+.comments input[type="text"],
+.comments button {
+  /* Adds margin space at the top of the comment input field and button */
+  margin-top: 5px; 
+}
+
+.comments button {
+  /* Sets the background color of the comment button to black */
+  background-color: black; 
+  /* Sets the text color of the comment button to white */
+  color: white; 
+  /* Adds padding to the comment button */
+  padding: 5px 10px; 
+  /* Removes the border of the comment button */
+  border: none; 
+  /* Adds a slight border radius to the comment button */
+  border-radius: 3px; 
+  /* Sets the cursor to a pointer when hovering over the comment button */
+  cursor: pointer; 
+  /* Adds margin space at the top of the comment button */
+  margin-top: 5px; 
+}
+.comments button:hover {
+  /* Sets the background color of the comment button to white when hovered */
+  background-color: white; 
+  /* Sets the text color of the comment button to black when hovered */
+  color: black; 
+}
+
+.comments input[type="text"] {
+  /* Includes padding and border in the input field's total width */
+  box-sizing: border-box; 
+  /* Sets the width of the comment input field to 100% */
+  width: 100%; 
+  /* Sets the maximum width of the comment input field to 100% */
+  max-width: 100%; 
+  /* Adds padding to the comment input field */
+  padding: 5px; 
+  /* Adds a black border around the comment input field */
+  border: 2px solid black; 
+  /* Adds a slight border radius to the comment input field */
+  border-radius: 3px; 
+  /* Breaks long words within the comment input field */
+  word-wrap: break-word; 
+}
+
+/* Like button */
+.like-button {
+  /* Sets the background color of the like button to black */
+  background-color: black; 
+  /* Sets the text color of the like button to white */
+  color: white; 
+  /* Adds padding to the like button */
+  padding: 5px 10px; 
+  /* Removes the border of the like button */
+  border: none; 
+  /* Adds a slight border radius to the like button */
+  border-radius: 3px; 
+  /* Sets the cursor to a pointer when hovering over the like button */
+  cursor: pointer; 
+  /* Adds margin space at the top of the like button */
+  margin-top: 5px; 
+}
+
+.like-button:hover {
+  /* Sets the background color of the like button to white when hovered */
+  background-color: white; 
+  /* Sets the text color of the like button to black when hovered */
+  color: black; 
+}
+
+/* Favorites button */
+.fav-button {
+  /* Sets the background color of the like button to black */
+  background-color: black; 
+  /* Sets the text color of the like button to white */
+  color: white; 
+  /* Adds padding to the like button */
+  padding: 5px 10px; 
+  /* Removes the border of the like button */
+  border: none; 
+  /* Adds a slight border radius to the like button */
+  border-radius: 3px; 
+  /* Sets the cursor to a pointer when hovering over the like button */
+  cursor: pointer; 
+  /* Adds margin space at the top of the like button */
+  margin-top: 5px; 
+}
+
+.fav-button:hover {
+  /* Sets the background color of the like button to white when hovered */
+  background-color: white; 
+  /* Sets the text color of the like button to black when hovered */
+  color: black; 
+}
+
+/* underconstruction image style */
+.image-container {
+  /* Displays the image container as a flex container */
+  display: flex; 
+  /* Centers the images horizontally within the container */
+  justify-content: center; 
+  /* Centers the images vertically within the container */
+  align-items: center; 
+}
+
+
+.image-container img {
+/* Sets the maximum width of the images within the container to 100% */
+  max-width: 100%; 
+/* Sets the maximum height of the images within the container to 100% */
+  max-height: 100%; 
+}

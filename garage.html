@@ -1,0 +1,402 @@
+<!-- used the boiler plate shit + ! -->
+<!DOCTYPE html>
+<!-- Page langage is english -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- tab description in the browser -->
+    <title>Garage</title>
+    <!-- Linked Bootstrap from  https://getbootstrap.com/ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- linked css , with little code as bootstrap handles the feel / look  -->
+    <link href="css/mystyle.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1><b>Hotwheels Garage</b></h1>
+    <!-- navigation bar -->
+    <div class="navbar">
+        <a href="index.html"><img src="Images/home.png" alt="Home">Home</a>
+        <a href="ducati.html"><img src="Images/ducatilogo.png" alt="Ducati">Ducati</a>
+        <a href="ferrari.html"><img src="Images/Ferrarilogo.jpg" alt="Ferrari">Ferrari</a>
+        <a href="lamborghini.html"><img src="Images/lamborghinilogo.png" alt="lamborghini">Lamborghini</a>
+        <a href="garage.html"><img src="Images/garage.jpg" alt="Garage">Garage</a>
+        <a href="cart.html"><img src="Images/cart.png" alt="Cart">Cart</a>
+        <a href="wishlist.html"><img src="Images/wishlist.png" alt="Wishlist">Wishlist</a>
+        <a href="favorites.html"><img src="Images/favourite.png" alt="Wishlist">Favorites</a>
+        <a href="contactMe.html"><img src="Images/Hot-Wheels-logo.png" alt="ContactMe">Contact us</a>
+        <a href="t&c.html"><img src="Images/T&C.jpg" alt="AboutUs">T&C's</a>
+    </div>
+
+    <h3>Gallary displaying Customized hotwheels</h3>
+    <h6>Add a comment of your thoughs about the model</h6>
+    <h6>Give a like if you like the model</h6>
+    <h6>Add a car to favorites to view later, Favorotes folder is in the Navigation bar</h6>
+
+    <div id="gallery-container">
+        <!-- Gallery items with comments and like buttons -->
+        <!-- item numbers are link to give the correct item the like and the comment -->
+        <!-- images have been googled,  -->
+        <div class="gallery-item">
+            <img src="Images/Garage/1.png" alt="Item 1">
+            <div class="item-info">
+                <div class="likes">Likes: <span id="likes-1">0</span></div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="comments-1"></ul>
+                    <input type="text" id="comment-input-1" placeholder="Leave a comment">
+                    <button onclick="addComment(1)">Submit</button>
+                </div>
+                <button class="like-button" onclick="likeItem(1)">Like</button>
+                <button class="fav-button" onclick="addToFavorites(1)">Add to Favorites</button>
+            </div>
+        </div>
+
+        <div class="gallery-item">
+            <img src="Images/Garage/2.png" alt="Item 2">
+            <div class="item-info">
+                <div class="likes">Likes: <span id="likes-2">0</span></div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="comments-2"></ul>
+                    <input type="text" id="comment-input-2" placeholder="Leave a comment">
+                    <button onclick="addComment(2)">Submit</button>
+                </div>
+                <button class="like-button" onclick="likeItem(2)">Like</button>
+                <button class="fav-button" onclick="addToFavorites(2)">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Garage/3.jpg" alt="Item 3">
+            <div class="item-info">
+                <div class="likes">Likes: <span id="likes-3">0</span></div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="comments-3"></ul>
+                    <input type="text" id="comment-input-3" placeholder="Leave a comment">
+                    <button onclick="addComment(3)">Submit</button>
+                </div>
+                <button class="like-button" onclick="likeItem(3)">Like</button>
+                <button class="fav-button" onclick="addToFavorites(3)">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Garage/4.jpg" alt="Item 4">
+            <div class="item-info">
+                <div class="likes">Likes: <span id="likes-4">0</span></div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="comments-4"></ul>
+                    <input type="text" id="comment-input-4" placeholder="Leave a comment">
+                    <button onclick="addComment(4)">Submit</button>
+                </div>
+                <button class="fav-button" class="like-button" onclick="likeItem(4)">Like</button>
+                <button class="fav-button" onclick="addToFavorites(4)">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Garage/5.jpg" alt="Item 5">
+            <div class="item-info">
+                <div class="likes">Likes: <span id="likes-5">0</span></div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="comments-5"></ul>
+                    <input type="text" id="comment-input-5" placeholder="Leave a comment">
+                    <button onclick="addComment(5)">Submit</button>
+                </div>
+                <button class="like-button" onclick="likeItem(5)">Like</button>
+                <button class="fav-button" onclick="addToFavorites(5)">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Garage/6.jpg" alt="Item 6">
+            <div class="item-info">
+                <div class="likes">Likes: <span id="likes-6">0</span></div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="comments-6"></ul>
+                    <input type="text" id="comment-input-6" placeholder="Leave a comment">
+                    <button onclick="addComment(6)">Submit</button>
+                </div>
+                <button class="like-button" onclick="likeItem(6)">Like</button>
+                <button class="fav-button" onclick="addToFavorites(6)">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Garage/7.jpg" alt="Item 7">
+            <div class="item-info">
+                <div class="likes">Likes: <span id="likes-7">0</span></div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="comments-7"></ul>
+                    <input type="text" id="comment-input-7" placeholder="Leave a comment">
+                    <button onclick="addComment(7)">Submit</button>
+                </div>
+                <button class="like-button" onclick="likeItem(7)">Like</button>
+                <button class="fav-button" onclick="addToFavorites(7)">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Garage/8.jpg" alt="Item 8">
+            <div class="item-info">
+                <div class="likes">Likes: <span id="likes-8">0</span></div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="comments-8"></ul>
+                    <input type="text" id="comment-input-8" placeholder="Leave a comment">
+                    <button onclick="addComment(8)">Submit</button>
+                </div>
+                <button class="like-button" onclick="likeItem(8)">Like</button>
+                <button class="fav-button" onclick="addToFavorites(8)">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Garage/9.jpg" alt="Item 9">
+            <div class="item-info">
+                <div class="likes">Likes: <span id="likes-9">0</span></div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="comments-9"></ul>
+                    <input type="text" id="comment-input-9" placeholder="Leave a comment">
+                    <button onclick="addComment(9)">Submit</button>
+                </div>
+                <button class="like-button" onclick="likeItem(9)">Like</button>
+                <button class="fav-button" onclick="addToFavorites(9)">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Garage/10.jpg" alt="Item 10">
+            <div class="item-info">
+                <div class="likes">Likes: <span id="likes-10">0</span></div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="comments-10"></ul>
+                    <input type="text" id="comment-input-10" placeholder="Leave a comment">
+                    <button onclick="addComment(10)">Submit</button>
+                </div>
+                <button class="like-button" onclick="likeItem(10)">Like</button>
+                <button class="fav-button" onclick="addToFavorites(10)">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Garage/11.jpg" alt="Item 11">
+            <div class="item-info">
+                <div class="likes">Likes: <span id="likes-11">0</span></div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="comments-11"></ul>
+                    <input type="text" id="comment-input-11" placeholder="Leave a comment">
+                    <button onclick="addComment(11)">Submit</button>
+                </div>
+                <button class="like-button" onclick="likeItem(11)">Like</button>
+                <button class="fav-button" onclick="addToFavorites(11)">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Garage/12.jpg" alt="Item 12">
+            <div class="item-info">
+                <div class="likes">Likes: <span id="likes-12">0</span></div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="comments-12"></ul>
+                    <input type="text" id="comment-input-12" placeholder="Leave a comment">
+                    <button onclick="addComment(12)">Submit</button>
+                </div>
+                <button class="like-button" onclick="likeItem(12)">Like</button>
+                <button class="fav-button" onclick="addToFavorites(12)">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Garage/13.jpg" alt="Item 13">
+            <div class="item-info">
+                <div class="likes">Likes: <span id="likes-13">0</span></div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="comments-13"></ul>
+                    <input type="text" id="comment-input-13" placeholder="Leave a comment">
+                    <button onclick="addComment(13)">Submit</button>
+                </div>
+                <button class="like-button" onclick="likeItem(13)">Like</button>
+                <button class="fav-button" onclick="addToFavorites(13)">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Garage/14.jpg" alt="Item 14">
+            <div class="item-info">
+                <div class="likes">Likes: <span id="likes-14">0</span></div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="comments-14"></ul>
+                    <input type="text" id="comment-input-14" placeholder="Leave a comment">
+                    <button onclick="addComment(14)">Submit</button>
+                </div>
+                <button class="like-button" onclick="likeItem(14)">Like</button>
+                <button class="fav-button" onclick="addToFavorites(14)">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Garage/15.jpg" alt="Item 15">
+            <div class="item-info">
+                <div class="likes">Likes: <span id="likes-15">0</span></div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="comments-15"></ul>
+                    <input type="text" id="comment-input-15" placeholder="Leave a comment">
+                    <button onclick="addComment(15)">Submit</button>
+                </div>
+                <button class="like-button" onclick="likeItem(15)">Like</button>
+                <button class="fav-button" onclick="addToFavorites(15)">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Garage/16.jpg" alt="Item 16">
+            <div class="item-info">
+                <div class="likes">Likes: <span id="likes-16">0</span></div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="comments-16"></ul>
+                    <input type="text" id="comment-input-16" placeholder="Leave a comment">
+                    <button onclick="addComment(16)">Submit</button>
+                </div>
+                <button class="like-button" onclick="likeItem(16)">Like</button>
+                <button class="fav-button" onclick="addToFavorites(16)">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Garage/17.jpg" alt="Item 17">
+            <div class="item-info">
+                <div class="likes">Likes: <span id="likes-17">0</span></div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="comments-17"></ul>
+                    <input type="text" id="comment-input-17" placeholder="Leave a comment">
+                    <button class="fav-button" onclick="addComment(17)">Submit</button>
+                </div>
+                <button class="like-button" onclick="likeItem(17)">Like</button>
+                <button class="fav-button" onclick="addToFavorites(17)">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Garage/18.jpg" alt="Item 18">
+            <div class="item-info">
+                <div class="likes">Likes: <span id="likes-18">0</span></div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="comments-18"></ul>
+                    <input type="text" id="comment-input-18" placeholder="Leave a comment">
+                    <button class="fav-button" onclick="addComment(18)">Submit</button>
+                </div>
+                <button class="like-button" onclick="likeItem(18)">Like</button>
+                <button class="fav-button" onclick="addToFavorites(18)">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Garage/19.jpg" alt="Item 19">
+            <div class="item-info">
+                <div class="likes">Likes: <span id="likes-19">0</span></div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="comments-19"></ul>
+                    <input type="text" id="comment-input-19" placeholder="Leave a comment">
+                    <button class="fav-button" onclick="addComment(19)">Submit</button>
+                </div>
+                <button class="like-button" onclick="likeItem(19)">Like</button>
+                <button class="fav-button" onclick="addToFavorites(19)">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Garage/20.jpg" alt="Item 20">
+            <div class="item-info">
+                <div class="likes">Likes: <span id="likes-20">0</span></div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="comments-20"></ul>
+                    <input type="text" id="comment-input-20" placeholder="Leave a comment">
+                    <button onclick="addComment(20)">Submit</button>
+                </div>
+                <button class="like-button" onclick="likeItem(20)">Like</button>
+                <button class="fav-button" onclick="addToFavorites(20)">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Garage/21.jpg" alt="Item 21">
+            <div class="item-info">
+                <div class="likes">Likes: <span id="likes-21">0</span></div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="comments-21"></ul>
+                    <input type="text" id="comment-input-21" placeholder="Leave a comment">
+                    <button onclick="addComment(21)">Submit</button>
+                </div>
+                <button class="like-button" onclick="likeItem(21)">Like</button>
+                <button class="fav-button" onclick="addToFavorites(21)">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Garage/22.jpg" alt="Item 22">
+            <div class="item-info">
+                <div class="likes">Likes: <span id="likes-22">0</span></div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="comments-22"></ul>
+                    <input type="text" id="comment-input-22" placeholder="Leave a comment">
+                    <button onclick="addComment(22)">Submit</button>
+                </div>
+                <button class="like-button" onclick="likeItem(22)">Like</button>
+                <button class="fav-button" onclick="addToFavorites(22)">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Garage/23.jpg" alt="Item 23">
+            <div class="item-info">
+                <div class="likes">Likes: <span id="likes-23">0</span></div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="comments-23"></ul>
+                    <input type="text" id="comment-input-23" placeholder="Leave a comment">
+                    <button onclick="addComment(23)">Submit</button>
+                </div>
+                <button class="like-button" onclick="likeItem(23)">Like</button>
+                <button class="fav-button" onclick="addToFavorites(23)">Add to Favorites</button>
+            </div>
+        </div>
+        <div class="gallery-item">
+            <img src="Images/Garage/24.jpeg" alt="Item 24">
+            <div class="item-info">
+                <div class="likes">Likes: <span id="likes-24">0</span></div>
+                <div class="comments">
+                    <h3>Comments:</h3>
+                    <ul id="comments-24"></ul>
+                    <input type="text" id="comment-input-24" placeholder="Leave a comment">
+                    <button onclick="addComment(24)">Submit</button>
+                </div>
+                <button class="like-button" onclick="likeItem(24)">Like</button>
+                <button class="fav-button" onclick="addToFavorites(24)">Add to Favorites</button>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- Link the JavaScript file -->
+    <script src="javascript/script.js"></script>
+    <footer>
+        <div>
+            <div class="col-md-12">
+                <!-- added the logo's to create one logo  -->
+                <img src="Images/Hot-Wheels-logo.png" alt="Company Logo2" height="100">
+                <img src="Images/ducatilogo.png" alt="Company Logo" height="50">
+                <img src="Images/lamborghinilogo.png" alt="Company Logo" height="50">
+                <img src="Images/Ferrarilogo.jpg" alt="Company Logo" height="50">
+                <img src="Images/Hot-Wheels-logo.png" alt="Company Logo2" height="100">
+            </div>
+
+        </div>
+    </footer>
+    <!-- Back to Top button -->
+    <a id="back-to-top" href="#" class="btn btn-primary mt-3"><b>Back to the Top</b></a>
+</body>
+
+</html>

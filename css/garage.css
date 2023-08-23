@@ -1,0 +1,72 @@
+/* navigation styling  */
+.navbar {
+    /* Displays the element as a flex container */
+    display: flex; 
+    /* Centers the flex items horizontally within the container */
+    justify-content: center; 
+    /* Centers the flex items vertically within the container */
+    align-items: center; 
+    /* Sets the background color of the navigation bar to black */
+    background-color: black; 
+    /* Sets the height of the navigation bar */
+    height: 50px; 
+  }
+  
+  .navbar a {
+    /* Displays the element as a flex container */
+    display: flex; 
+    /* Centers the flex items vertically within the container */
+    align-items: center; 
+    /* Sets the text color to white */
+    color: white; 
+    /* Removes the underline decoration from the links */
+    text-decoration: none; 
+    /* Adds padding to the links */
+    padding: 0 15px; 
+  }
+  
+  .navbar a img {
+    /* Sets the height of the images within the navigation links */
+    height: 20px; 
+    /* Adds a margin to the right of the images within the navigation links */
+    margin-right: 5px; 
+  }
+
+/* Body styling */
+body {
+    /* Italian flag background */
+  /* Sets a linear gradient background from green to white to red */
+    background-image: linear-gradient(to right, green 0%, white 50%, red 80%); 
+    /* Prevents the background from repeating */
+    background-repeat: no-repeat; 
+    /* Ensures the background covers the entire element */
+    background-size: cover; 
+  }
+  
+  /* Center the text within <h1> element */
+  h1 {
+    text-align: center; 
+  }
+
+  #back-to-top {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+      /* Responsive adjustments */
+
+/* Make .col-md-4 elements occupy 50% width on medium screens */
+@media (min-width: 768px) {
+  .col-md-4 {
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+}
+
+/* Make .col-md-4 elements occupy 33.33% width on large screens */
+@media (min-width: 992px) {
+  .col-md-4 {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+  }
+}
